@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+button{
+    /* background-color: aquamarine; */
+    border: solid rgb(151, 150, 150) 1px;
+    font-size: 12px;
+}
+img{
+    width: 25px;
+    height: 25px;
+}
+section {
+    width: 700px;
+    height: 1000;
+    display: flex;
+    justify-content: center;
+
+    #AC {
+        width: 300px;
+        height: 600px;
+        border: solid rgba(93, 99, 103, 0.851) 1px;
+        border-radius: 20px;
+        margin: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        #displaySreen{
+            width: 80%;
+            height: 30%;
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(209, 209, 209);
+            border-radius: 10px;
+            border: solid rgba(101, 100, 100, 0.275) 4px;
+
+            #indicators{
+                width: 100%;
+                height: 100%;
+                display: none;
+                flex-direction: column;
+                gap: 5px;
+                justify-content: center;
+                align-items: center;
+
+                .indicators-icon{
+                    display: flex;
+                    gap: 5px;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                #fan{
+                display: flex;
+                gap: 110px;
+                font-family: sans-serif;
+                color: rgb(116, 112, 112);
+                }
+            
+                #temp{
+                    display: flex;
+                    gap: 5px;
+                    justify-content: center;
+                    align-items: end;
+                    width: 100%;
+                    height: 50%;
+
+                    #degreeSymbol{
+                        font-size: 40px;
+                        vertical-align: super;
+                    }
+                    
+                    #indicators-number{
+                        display: flex;
+                    }
+                    h1{
+                    font-size: 60px;
+                    color: rgb(65, 65, 65);
+                    font-family: sans-serif;
+                    }
+                    p{
+                        font-size: 30px;
+                        color: rgb(116, 112, 112);
+                        font-family: sans-serif;
+                        margin-bottom: 5px;
+                    }
+                }
+            } 
+        }
+
+        #controllers{
+            width: 80%;
+            height: 65%;
+            padding-top: 30px;
+            padding-bottom: 45px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+
+            #power{
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+
+                .controlButton{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    cursor: pointer;
+
+                    img{
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+
+            }
+
+            #volume{
+                display: flex;
+                justify-content: center;
+                gap: 30px;
+
+                .controlButton{
+                    width: 55px;
+                    height: 40px;
+                    border-radius: 6px;
+                    font-size: 30px;
+                    cursor: pointer;
+                }
+            }
+
+            #timer{
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 20px;
+
+                .controlButton{
+                    width: 80px;
+                    height: 25px;
+                    border-radius: 6px;
+                }
+                
+            }
+
+            #mode{
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 15px;
+                
+                .controlButton{
+                    width: 60px;
+                    height: 25px;
+                    border-radius: 6px;
+                }
+            }
+        }
+    }
+}

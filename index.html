@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section>
+        <div id="AC">
+            <div id="displaySreen">
+                <div id="indicators">
+                    <div id="fan">
+                        <div class="indicators-icon">
+                            <img src="./Footage/fan-solid-full.svg" alt="">
+                            <p>FAN</p>
+                        </div>
+                        <p id="fanSpeed">1</p>
+                    </div>
+                    <!-- <hr> -->
+                    <div id="temp">
+                        <div class="indicators-icon">
+                            <img src="./Footage/temperature-high-solid-full.svg" alt="" style=" margin-bottom: 20px;">
+                            <p style="font-size: 14px; margin-bottom: 20px;">TEMP</p>
+                        </div>
+                        <div id="indicators-number">
+                            <h1 id="tempIndicator">20</h1>
+                            <p id="degreeSymbol">&deg</p>
+                        </div>
+                        <p>C</p>
+                     </div>
+                </div>
+            </div>
+
+            <div id="controllers">
+                <div id="power">
+                    <button class="controlButton">OK</button>
+                    <button id="powerButton" class="controlButton" onclick="togglePower()">
+                        <img id="powerOn-Off" src="./Footage/power-off-solid-full_Red.svg" alt="">
+                    </button>
+                    <button class="controlButton">
+                        <img src="./Footage/clock-regular-full.svg" alt="">
+                    </button>
+                </div>
+
+                <div id="volume">
+                    <button class="controlButton" onclick="tempIncrease()">+</button>
+                    <button class="controlButton" onclick="tempDecrease()">-</button>
+                </div>
+
+                <div id="timer">
+                    <button class="controlButton" onclick="fanSpeed()" style="cursor: pointer;">FAN</button>
+                    <button class="controlButton">MODE</button>
+                    <button class="controlButton">CLOCK</button>
+                    <button class="controlButton">TIMER</button>
+                </div>
+
+                <div id="mode">
+                    <button class="controlButton">BLOW</button>
+                    <button class="controlButton">AUTO</button>
+                    <button class="controlButton">LIGHT</button>
+                    <button class="controlButton">TEMP</button>
+                    <button class="controlButton">TURBO</button>
+                    <button class="controlButton">SLEEP</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
