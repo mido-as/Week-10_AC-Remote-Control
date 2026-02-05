@@ -25,6 +25,7 @@ section {
     #AC {
         width: 300px;
         height: 600px;
+        background-color: rgba(228, 227, 227, 0.634);
         border: solid rgba(93, 99, 103, 0.851) 1px;
         border-radius: 20px;
         margin: 50px;
@@ -41,7 +42,7 @@ section {
             gap: 5px;
             justify-content: center;
             align-items: center;
-            background-color: rgb(209, 209, 209);
+            background-color: rgba(209, 209, 209, 0.7);
             border-radius: 10px;
             border: solid rgba(101, 100, 100, 0.275) 4px;
 
