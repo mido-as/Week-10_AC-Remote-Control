@@ -1,7 +1,7 @@
 
 let power = false
 let fanIndicator = 1
-let temprature = 24
+let temprature = 20
 
 function togglePower(){
     if (power == false){
